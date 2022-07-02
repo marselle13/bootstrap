@@ -6,15 +6,32 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #fd5334;
 }
 
-h1 {
-  width: 252.82px;
-  height: 23.35px;
+h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-footer {
+h3 {
+  position: absolute;
+  left: 607px;
+  top: 306px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.footer-image {
   background-image: url("images/landing.png");
   width: 923px;
   height: 1196px;
@@ -40,11 +57,70 @@ footer {
   top: 30px;
   bottom: 35px;
 }
-.title {
+.rectangle-2 {
   background-color: #7025fb;
   width: 923;
   height: 84;
   position: absolute;
   padding-left: 60px;
   font-size: 40px;
+}
+
+.rectangle-1 {
+  background-color: #fd5334;
+  position: absolute;
+  width: 997px;
+  height: 1280px;
+  left: 923px;
+  top: 0px;
+}
+
+.main-text1 {
+  position: absolute;
+  left: 85px;
+  top: 265px;
+}
+
+.main-text2 {
+  position: absolute;
+  left: 86px;
+  top: 390px;
+}
+
+.start-btn {
+  /* Button layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+  background-color: #212529;
+  border-radius: 8px;
+
+  /* Get started */
+  color: #fff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Position */
+  position: absolute;
+  width: 191px;
+  height: 53px;
+  left: 85px;
+  top: 601px;
+}
+
+.btn-arrow {
+  position: absolute;
+  left: 143px;
 }
