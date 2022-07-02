@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #fd5334;
+}
+
+h1 {
+  width: 252.82px;
+  height: 23.35px;
+}
+
+footer {
+  background-image: url("images/landing.png");
+  width: 923px;
+  height: 1196px;
+  position: absolute;
+  left: 0px;
+  top: 84px;
+}
+
+.logo-name {
+  position: absolute;
+  width: 252.82px;
+  height: 23.35px;
+  left: 22.93px;
+  top: 0px;
+}
+
+.logo {
+  background-image: url(images/vector.png);
+  width: 14.67px;
+  height: 18.33px;
+  position: absolute;
+  left: 60px;
+  top: 30px;
+  bottom: 35px;
+}
+.title {
+  background-color: #7025fb;
+  width: 923;
+  height: 84;
+  position: absolute;
+  padding-left: 60px;
+  font-size: 40px;
+}
