@@ -6,6 +6,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  color: white;
 }
 
 h2 {
@@ -31,7 +32,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* landing page main photo */
+/* langind page main photo */
 .footer-image {
   background-image: url("images/landing.png");
   width: 923px;
@@ -176,8 +177,6 @@ h3 {
   text-transform: uppercase;
 }
 
-/* Start creating your account */
-
 .starting-msg {
   position: absolute;
   width: 215px;
@@ -190,12 +189,13 @@ h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+  /* identical to box height, or 24px */
+
   text-transform: capitalize;
 
   color: #212529;
 }
 
-/* line */
 .starting-line {
   position: absolute;
   width: 999px;
@@ -204,4 +204,287 @@ h3 {
   top: 84px;
 
   border: 1px solid rgba(185, 180, 196, 0.3);
+}
+
+.box-1 {
+  position: absolute;
+  left: 1030px;
+  top: 140px;
+
+  box-sizing: border-box;
+
+  width: 40px;
+  height: 40px;
+
+  background: #fff;
+  border: 1px solid #e5e6e8;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.connect-line {
+  position: absolute;
+  left: 1074px;
+  top: 160px;
+
+  width: 178px;
+  height: 0px;
+
+  border: 0.5px solid rgba(185, 180, 196, 0.3);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.box-2 {
+  position: absolute;
+  left: 1258px;
+  top: 140px;
+
+  box-sizing: border-box;
+
+  width: 40px;
+  height: 40px;
+
+  background: #f5f5f5;
+  border: 1px solid #e5e6e8;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.box-num1 {
+  position: absolute;
+  width: 11px;
+  height: 25px;
+  left: 14px;
+  top: 8px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #212529;
+}
+
+.box-num2 {
+  position: absolute;
+  width: 11px;
+  height: 25px;
+  left: 14px;
+  top: 8px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #95939a;
+}
+
+.box-txt1 {
+  /* Personal information */
+
+  position: absolute;
+  width: 158px;
+  height: 24px;
+  left: 971px;
+  top: 188px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  color: #000000;
+}
+
+.box-txt2 {
+  position: absolute;
+  width: 158px;
+  height: 24px;
+  left: 1206px;
+  top: 188px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  color: #000000;
+}
+
+.info {
+  position: absolute;
+
+  left: 971px;
+  top: 324px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  color: #000000;
+}
+
+.small-info {
+  position: absolute;
+  left: 971px;
+  top: 375px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  text-transform: capitalize;
+
+  color: #95939a;
+}
+
+.form form {
+  position: absolute;
+  width: 775px;
+  height: 304px;
+  left: 971px;
+  top: 481px;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.form form input {
+  /* Auto layout */
+  width: 775px;
+  height: 46px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 16px;
+
+  border-width: 0px 0px 1px 0px;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+}
+
+.next-btn {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  gap: 10px;
+  background-color: #212529;
+  border-radius: 8px;
+
+  /* Get started */
+  color: #fff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  position: absolute;
+  width: 128px;
+  height: 53px;
+  left: 1618px;
+  top: 873px;
+}
+
+.btn-arrow2 {
+  position: absolute;
+  left: 1698px;
+  top: 887px;
+}
+
+.back-btn {
+  /* Button */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 24px;
+  gap: 10px;
+  background-color: white;
+
+  position: absolute;
+  width: 93px;
+  height: 53px;
+  left: 971px;
+  top: 873px;
+
+  border: 1px solid #212529;
+  border-radius: 8px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #212529;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.back-btn:hover {
+  background: rgba(185, 180, 196, 0.3);
+  border: 1px solid rgba(194, 165, 249, 0.8);
+  border-radius: 8px;
 }
