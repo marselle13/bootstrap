@@ -9,6 +9,8 @@ body {
   color: white;
 }
 
+/* chess says who we are */
+
 h2 {
   font-family: "Nunito";
   font-style: normal;
@@ -18,6 +20,8 @@ h2 {
   text-transform: uppercase;
   color: #fff;
 }
+
+/* A lot about */
 
 h3 {
   position: absolute;
@@ -30,19 +34,94 @@ h3 {
   font-size: 20px;
   line-height: 27px;
   text-transform: uppercase;
+  color: #212529;
 }
 
-/* langind page main photo */
+/* Form-position */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  position: absolute;
+  width: 775px;
+  height: 304px;
+  left: 971px;
+  top: 481px;
+}
+/* input-style */
+input {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 16px;
+
+  width: 775px;
+  height: 46px;
+
+  /* Gray/White */
+
+  background: #ffffff;
+  /* Border & Divider/divider ↓ */
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/* placeholder style */
+input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #212529;
+}
+
+/* input hover */
+input:hover {
+  background: #f8f9fa;
+  /* Border & Divider/divider ↓ */
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+
+/* landing page main photo */
 .footer-image {
   background-image: url("images/landing.png");
+  /* Position and size*/
+  position: absolute;
   width: 923px;
   height: 1196px;
-  position: absolute;
   left: 0px;
   top: 84px;
 }
 
+/* Redberry knight Cup */
+
 .logo-name {
+  /* Position and size */
   position: absolute;
   width: 252.82px;
   height: 23.35px;
@@ -50,45 +129,54 @@ h3 {
   top: 0px;
 }
 
+/* Logo */
+
 .logo {
   background-image: url(images/vector.png);
+  /* position and size*/
+  position: absolute;
   width: 14.67px;
   height: 18.33px;
-  position: absolute;
   left: 60px;
   top: 30px;
   bottom: 35px;
 }
+
+/* Landing page logo part background*/
 .rectangle-2 {
   background-color: #7025fb;
+  /* position and size*/
+  position: absolute;
   width: 923;
   height: 84;
-  position: absolute;
   padding-left: 60px;
   font-size: 40px;
 }
 
+/* landing page text part background*/
 .rectangle-1 {
   background-color: #fd5334;
+  /* position and size */
   position: absolute;
   width: 997px;
   height: 1280px;
   left: 923px;
   top: 0px;
 }
-
+/* chess says */
 .main-text1 {
   position: absolute;
   left: 85px;
   top: 265px;
 }
-
+/* who we are */
 .main-text2 {
   position: absolute;
   left: 86px;
   top: 390px;
 }
 
+/* Get started button */
 .start-btn {
   /* Button layout */
   display: flex;
@@ -109,12 +197,11 @@ h3 {
   text-transform: capitalize;
 
   /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
 
-  /* Position */
+  /* Position and size*/
   position: absolute;
   width: 191px;
   height: 53px;
@@ -122,22 +209,26 @@ h3 {
   top: 600px;
 }
 
-.btn-arrow {
+/* get started's arrow */
+.start-btn-arrow {
   position: absolute;
   left: 143px;
 }
 
+/* get started batton hover */
 .start-btn:hover {
   border: 4px solid rgba(194, 165, 249, 0.8);
 }
 
 /* SECOND PAGE */
 
+/* second page main photo */
 .footer-image2 {
   background-image: url("images/chess.png");
+  /* position and size */
+  position: absolute;
   width: 923px;
   height: 1196px;
-  position: absolute;
   left: 0px;
   top: 84px;
 }
@@ -145,6 +236,7 @@ h3 {
 /* “When you see a good move, look for a better one.” */
 
 .quote {
+  /* position*/
   position: absolute;
   width: 423px;
   height: 83px;
@@ -157,13 +249,13 @@ h3 {
   font-size: 26px;
   line-height: 35px;
   text-transform: uppercase;
+  color: #212529;
 }
 
 /* -Emanuel Lasker */
 .name {
+  /* position*/
   position: absolute;
-  width: 222px;
-  height: 33px;
   left: 132px;
   top: 358px;
 
@@ -177,10 +269,10 @@ h3 {
   text-transform: uppercase;
 }
 
+/* start creating your account */
 .starting-msg {
+  /* position*/
   position: absolute;
-  width: 215px;
-  height: 24px;
   left: 971px;
   top: 30px;
 
@@ -189,13 +281,12 @@ h3 {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
-
-  text-transform: capitalize;
-
   color: #212529;
+  /* identical to box height, or 24px */
+  text-transform: capitalize;
 }
 
+/* line */
 .starting-line {
   position: absolute;
   width: 999px;
@@ -206,34 +297,34 @@ h3 {
   border: 1px solid rgba(185, 180, 196, 0.3);
 }
 
+/* box number 1 */
 .box-1 {
   position: absolute;
+  width: 40px;
+  height: 40px;
   left: 1030px;
   top: 140px;
 
   box-sizing: border-box;
-
-  width: 40px;
-  height: 40px;
 
   background: #fff;
   border: 1px solid #e5e6e8;
   border-radius: 8px;
 
   /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
+/* box connect line */
 .connect-line {
+  /* position and size */
   position: absolute;
-  left: 1074px;
-  top: 160px;
-
   width: 178px;
   height: 0px;
+  left: 1074px;
+  top: 160px;
 
   border: 0.5px solid rgba(185, 180, 196, 0.3);
 
@@ -244,15 +335,16 @@ h3 {
   flex-grow: 0;
 }
 
+/* box number 2 */
 .box-2 {
+  /* position and size */
   position: absolute;
+  width: 40px;
+  height: 40px;
   left: 1258px;
   top: 140px;
 
   box-sizing: border-box;
-
-  width: 40px;
-  height: 40px;
 
   background: #f5f5f5;
   border: 1px solid #e5e6e8;
@@ -266,9 +358,8 @@ h3 {
 }
 
 .box-num1 {
+  /* position*/
   position: absolute;
-  width: 11px;
-  height: 25px;
   left: 14px;
   top: 8px;
 
@@ -277,15 +368,12 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
   color: #212529;
 }
 
 .box-num2 {
+  /* position*/
   position: absolute;
-  width: 11px;
-  height: 25px;
   left: 14px;
   top: 8px;
 
@@ -298,13 +386,11 @@ h3 {
 
   color: #95939a;
 }
+/* Personal information */
 
 .box-txt1 {
-  /* Personal information */
-
+  /* position*/
   position: absolute;
-  width: 158px;
-  height: 24px;
   left: 971px;
   top: 188px;
 
@@ -334,10 +420,10 @@ h3 {
 
   color: #000000;
 }
-
+/* personal information */
 .info {
+  /* position */
   position: absolute;
-
   left: 971px;
   top: 324px;
 
@@ -346,12 +432,11 @@ h3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 150%;
-  /* identical to box height, or 48px */
-
   color: #000000;
 }
-
+/* this is basi information field */
 .small-info {
+  /* position */
   position: absolute;
   left: 971px;
   top: 375px;
@@ -361,49 +446,10 @@ h3 {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  color: #95939a;
   /* identical to box height, or 21px */
 
   text-transform: capitalize;
-
-  color: #95939a;
-}
-
-.form form {
-  position: absolute;
-  width: 775px;
-  height: 304px;
-  left: 971px;
-  top: 481px;
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
-}
-
-.form form input {
-  /* Auto layout */
-  width: 775px;
-  height: 46px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 8px 16px;
-
-  border-width: 0px 0px 1px 0px;
-  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
-  border-radius: 4px;
-
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  color: #212529;
 }
 
 .next-btn {
@@ -412,13 +458,18 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px 20px;
+  padding: 10px 24px;
   gap: 10px;
-  background-color: #212529;
+
+  position: absolute;
+  width: 128px;
+  height: 53px;
+  left: 1618px;
+  top: 873px;
+
+  background: #212529;
   border-radius: 8px;
 
-  /* Get started */
-  color: #fff;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -426,28 +477,29 @@ h3 {
   line-height: 27px;
   text-transform: capitalize;
 
+  color: #ffffff;
+
   /* Inside auto layout */
 
   flex: none;
   order: 0;
   flex-grow: 0;
-
-  position: absolute;
-  width: 128px;
-  height: 53px;
-  left: 1618px;
-  top: 873px;
 }
 
-.btn-arrow2 {
+.next-btn-arrow {
   position: absolute;
-  left: 1698px;
-  top: 887px;
+
+  left: 80px;
+  top: 12px;
 }
 
+/* next batton hover */
+.next-btn:hover {
+  border: 4px solid rgba(194, 165, 249, 0.8);
+}
+
+/* back button */
 .back-btn {
-  /* Button */
-
   box-sizing: border-box;
 
   /* Auto layout */
@@ -483,6 +535,7 @@ h3 {
   flex-grow: 0;
 }
 
+/* back buttton's hover */
 .back-btn:hover {
   background: rgba(185, 180, 196, 0.3);
   border: 1px solid rgba(194, 165, 249, 0.8);
