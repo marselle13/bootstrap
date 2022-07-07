@@ -4,9 +4,13 @@ $(".start-btn").on("click", function () {
   location.href = "create.html";
 });
 
-// back button
+//second page back button
 $(".back-btn").on("click", function () {
   location.href = "index.html";
+});
+// third page back button
+$(".back-btn-third").on("click", function () {
+  location.href = "create.html";
 });
 // box number 1
 $("input").on("click", function () {
@@ -130,3 +134,19 @@ $(".close3").on("click", function () {
 //   const formattedInputValue = formatPhoneNumber(inputField.value);
 //   inputField.value = formattedInputValue;
 // }
+
+const selected = document.querySelector(".selected");
+const optionsContainer = document.querySelector(".options-container");
+const optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", function () {
+  optionsContainer.classList.toggle("active");
+  $(".box-2").css("background", "#E9FAF1");
+});
+
+optionsList.forEach((o) => {
+  o.addEventListener("click", () => {
+    selected.innerHTML = o.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});

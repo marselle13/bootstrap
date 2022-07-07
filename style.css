@@ -154,7 +154,7 @@ h3 {
 
 /* second page main photo */
 .footer-image2 {
-  background-image: url("images/chess.png");
+  background-image: url("images/second.png");
   /* position and size */
   position: absolute;
   width: 923px;
@@ -381,8 +381,9 @@ h3 {
 
   text-transform: capitalize;
 }
-
-.next-btn {
+/* next button */
+.next-btn,
+.next-btn-third {
   /* Auto layout */
 
   display: flex;
@@ -414,8 +415,9 @@ h3 {
   order: 0;
   flex-grow: 0;
 }
-
-.next-btn-arrow {
+/* next btn arrow */
+.next-btn-arrow,
+.next-btn-arrow-third {
   position: absolute;
 
   left: 80px;
@@ -423,12 +425,14 @@ h3 {
 }
 
 /* next batton hover */
-.next-btn:hover {
+.next-btn:hover,
+.next-btn-third:hover {
   border: 4px solid rgba(194, 165, 249, 0.8);
 }
 
 /* back button */
-.back-btn {
+.back-btn,
+.back-btn-third {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -464,7 +468,8 @@ h3 {
 }
 
 /* back buttton's hover */
-.back-btn:hover {
+.back-btn:hover,
+.back-btn-third:hover {
   background: rgba(185, 180, 196, 0.3);
   border: 1px solid rgba(194, 165, 249, 0.8);
   border-radius: 8px;
@@ -630,15 +635,18 @@ h3 {
   margin-right: 195px;
 }
 
-/* close icon */
-.close3,
-.close2,
-.close1 {
-  position: relative;
-  right: 5px;
-  bottom: 5px;
-}
+.invalid-txt::after {
+  content: "";
+  background: url(images/close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  left: 290px;
+  top: 5px;
+}
 /* invalid line */
 .invalid-line {
   /* line */
@@ -665,4 +673,218 @@ h3 {
   position: relative;
   top: 12px;
   left: 12px;
+}
+
+/* third page photo*/
+.footer-image3 {
+  background-image: url(images/third.png);
+  position: absolute;
+  left: 0px;
+  top: 84px;
+  width: 923px;
+  height: 996px;
+}
+/*many have become chess masters;no one has become the master of chess" */
+.quote2 {
+  position: absolute;
+  width: 615px;
+  height: 83px;
+  left: 117px;
+  top: 261px;
+
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  color: #212529;
+}
+
+/* siegbert tarasch */
+.name2 {
+  position: absolute;
+  width: 266px;
+  height: 33px;
+  left: 466px;
+  top: 376px;
+
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #093f68;
+}
+
+.reg {
+  background: #e9faf1;
+  border-radius: 8px;
+  border: none;
+}
+
+.bold {
+  color: #212529;
+}
+
+.back-btn-third {
+  position: absolute;
+
+  left: 995px;
+  top: 886px;
+}
+
+.next-btn-third {
+  position: absolute;
+
+  left: 1693px;
+  top: 886px;
+}
+
+.container-select {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 961px;
+  top: 491px;
+}
+
+.container-select2 {
+  position: absolute;
+  width: 392px;
+  height: 46px;
+  left: 1376px;
+  top: 491px;
+}
+
+.selected {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  /* identical to box height, or 30px */
+
+  /* Gray/900 */
+
+  color: #212529;
+  cursor: pointer;
+
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+}
+.selected::after {
+  content: "";
+  background: url("images/bar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 16px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.option label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  /* identical to box height, or 30px */
+
+  color: #000000;
+}
+
+.select-box .options-container {
+  /* Auto layout */
+  /* border */
+  position: absolute;
+  width: 392px;
+  height: 199px;
+  left: 10px;
+  top: 40px;
+
+  background: #ffffff;
+  border: 1px solid rgba(185, 180, 196, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+}
+
+.select-box label {
+  cursor: pointer;
+  color: #000000;
+}
+.select-box .option .radio {
+  display: none;
+}
+
+.select-box .options-container .option {
+  padding: 15px 24px;
+}
+
+.select-box .options-container .option:hover {
+  background: #f7f7f9;
+}
+.container-select3 {
+  position: absolute;
+  width: 775px;
+  height: 46px;
+  left: 960px;
+  top: 617px;
+}
+.container-select3 .question {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  color: #212529;
+}
+
+.container-select3 .question .option {
+  display: flex;
+  flex-direction: ;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 58px;
+  height: 24px;
+  left: 976px;
+  top: 675px;
+}
+
+.container-select3 .question label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
