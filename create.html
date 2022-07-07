@@ -28,41 +28,72 @@
     <hr class="starting-line" />
 
     <div class="wizard">
-      <div class="box-1"><p class="box-num1">1</p></div>
+      <div class="box-1"><div class="box-num1">1</div></div>
+
       <p class="box-txt1">Personal information</p>
       <hr class="connect-line" />
-      <div class="box-2"><p class="box-num2">2</p></div>
+      <div class="box-2"><div class="box-num2">2</div></div>
       <p class="box-txt2">Chees experience</p>
     </div>
-
-    <div class="container">
+    <div class="content">
       <span class="info">Personal information</span>
       <span class="small-info">This is Basic information fields</span>
-      <div class="form">
-        <form action="#">
-          <div class=input-border>
-          <input type="text" placeholder="Name" required />
-        </div>
-        <div class=input-border>
-          <input type="text" placeholder="Email address" required />
-        </div>
-          <div class=input-border>
-          <input type="text" placeholder="Phone number" required />
-        </div>
-          <div class=input-border>
-          <input type="text" placeholder="Date of birth" required />
-        </div>
-        </form>
-      </div>
-    
 
+      <form id="form" action="/update">
+        <div class="field">
+          <input id="name" type="text" placeholder="Name" />
 
-    <button type="button" class="back-btn">back</button>
+          <img class="check1" src="images/check.png" alt="check" />
+        </div>
+        <div class="error1-box">
+          <img class="invalid" src="images/invalid.png" alt="" />
+          <span class="invalid-txt">invalid name</span>
+          <img class="close1" src="images/close.png" alt="" />
+          <hr class="invalid-line" />
+          <span class="enter">please enter valid name</span>
+        </div>
 
-    <button type="button" class="next-btn">
-      next
-      <img class="next-btn-arrow" src="images/arrow.png" alt="arrow1" />
-    </button>
+        <div class="field">
+          <input id="email" type="text" placeholder="Email address" />
+
+          <img class="check2" src="images/check.png" alt="check" />
+        </div>
+        <div class="error2-box">
+          <img class="invalid" src="images/invalid.png" alt="" />
+          <span class="invalid-txt">invalid email</span>
+          <img class="close2" src="images/close.png" alt="" />
+          <hr class="invalid-line" />
+          <span class="enter">please enter valid email address</span>
+        </div>
+
+        <div class="field">
+          <input id="phone" type="text" placeholder="Phone number" />
+
+          <img class="check3" src="images/check.png" alt="check" />
+        </div>
+        <div class="error3-box">
+          <img class="invalid" src="images/invalid.png" alt="" />
+          <span class="invalid-txt">invalid phone</span>
+          <img class="close3" src="images/close.png" alt="" />
+          <hr class="invalid-line" />
+          <span class="enter">please enter valid phone number</span>
+        </div>
+
+        <div class="field">
+          <input id="date" type="date" placeholder="Date of birth" />
+
+          <img class="check4" src="images/check.png" alt="check" />
+        </div>
+        <div class="error-box"></div>
+        <div class="buttons">
+          <button type="button" class="back-btn">back</button>
+          <button type="submit" class="next-btn">
+            next
+            <img class="next-btn-arrow" src="images/arrow.png" alt="arrow1" />
+          </button>
+        </div>
+      </form>
+    </div>
 
     <footer class="footer-image2">
       <p class="quote">"when you see a good move, look for a better one."</p>
@@ -70,6 +101,7 @@
     </footer>
 
     <!-- Jquery -->
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
