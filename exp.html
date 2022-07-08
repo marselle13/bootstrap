@@ -49,46 +49,45 @@
       <p class="name2">-siegbert tarrasch</p>
     </footer>
 
-    <div class="container-select">
-      <div class="select-box">
-        <div class="selected">level of knowledge</div>
+    <div class="dropdown">
+      <input
+        type="text"
+        class="textBox"
+        placeholder="level of knowledge"
+        readonly
+      />
+      <div class="option">
+        <div onclick="show('Beginner')">Beginner</div>
+        <div onclick="show('Intermediate')">Intermediate</div>
+        <div onclick="show('Professional')">Professional</div>
+      </div>
+    </div>
 
-        <div class="options-container">
-          <div class="option">
-            <input type="radio" class="radio" id="beginner" />
-            <label for="beginner">beginner</label>
-          </div>
-          <div class="option">
-            <input type="radio" class="radio" id="intermediate" />
-            <label for="intermediate">Intermediate</label>
-          </div>
-          <div class="option">
-            <input type="radio" class="radio" id="professional" />
-            <label for="professional">Professional</label>
-          </div>
+    <div class="dropdown2">
+      <input
+        type="text"
+        class="textBox"
+        placeholder="Choose your Character"
+        readonly
+      />
+      <div id="option"></div>
+    </div>
+
+    <div class="question">
+      <span>Have you participated in the Redberry championship? </span>
+      <div class="option">
+        <div class="option-yes">
+          <input type="radio" id="yes" />
+        <label for="yes">Yes</label>
+        </div>
+        <div class="option-no">
+         <input type="radio" id="no" />
+        <label for="no">No</label>
+      </div>
         </div>
       </div>
     </div>
 
-    <div class="container-select2">
-      <div class="select-box">
-        <div class="selected">Choose your character</div>
-      </div>
-    </div>
-
-    <div class="container-select3">
-      <div class="question">
-        Have you participated in the Redberry championship?
-      </div>
-      <div class="option1">
-        <input type="radio" id="yes" />
-        <label for="yes">Yes</label>
-      </div>
-      <div class="option2">
-        <input type="radio" id="no" />
-        <label for="no">No</label>
-      </div>
-    </div>
     <div class="buttons-third">
       <button type="button" class="back-btn-third">back</button>
       <button type="submit" class="next-btn-third">

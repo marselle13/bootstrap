@@ -135,18 +135,22 @@ $(".close3").on("click", function () {
 //   inputField.value = formattedInputValue;
 // }
 
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
-const optionsList = document.querySelectorAll(".option");
+function show(anything) {
+  document.querySelector(".textBox").value = anything;
+}
 
-selected.addEventListener("click", function () {
-  optionsContainer.classList.toggle("active");
-  $(".box-2").css("background", "#E9FAF1");
-});
+let dropdown = document.querySelector(".dropdown");
+dropdown.onclick = function () {
+  dropdown.classList.toggle("active");
+};
 
-optionsList.forEach((o) => {
-  o.addEventListener("click", () => {
-    selected.innerHTML = o.querySelector("label").innerHTML;
-    optionsContainer.classList.remove("active");
-  });
-});
+// var staticUrl = "https://chess-tournament-api.devtest.ge/api/grandmasters";
+
+// $(document).ready(function () {
+//   function load_json_data(id, parent_id) {
+//     var html_code = "";
+//     $.getJSON(staticUrl, function (data) {
+//       html_code += $.each(data, function (key, value) {});
+//     });
+//   }
+// });
