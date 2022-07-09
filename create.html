@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BootStrap Project</title>
+    <title>Redberry knight Cup</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,51 +41,84 @@
 
       <form id="form" action="/update">
         <div class="field">
-          <input id="name" type="text" placeholder="Name" />
+          <input
+            name="name"
+            id="name"
+            xtype="text"
+            placeholder="Name"
+            class="form_data"
+          />
 
           <img class="check1" src="images/check.png" alt="check" />
         </div>
         <div class="error1-box">
           <img class="invalid" src="images/invalid.png" alt="" />
           <span class="invalid-txt">invalid name</span>
+          <div class="close1"></div>
           <hr class="invalid-line" />
           <span class="enter">please enter valid name</span>
         </div>
 
         <div class="field">
-          <input id="email" type="text" placeholder="Email address" />
+          <input
+            name="email"
+            id="email"
+            type="text"
+            placeholder="Email address"
+            class="form_data"
+          />
 
           <img class="check2" src="images/check.png" alt="check" />
         </div>
         <div class="error2-box">
           <img class="invalid" src="images/invalid.png" alt="" />
           <span class="invalid-txt">invalid email</span>
+          <div class="close2"></div>
           <hr class="invalid-line" />
           <span class="enter">please enter valid email address</span>
         </div>
 
         <div class="field">
-          <input id="phone" type="text" placeholder="Phone number" />
+          <input
+            name="phone"
+            id="phone"
+            type="text"
+            placeholder="Phone number"
+            class="form_data"
+          />
 
           <img class="check3" src="images/check.png" alt="check" />
         </div>
         <div class="error3-box">
           <img class="invalid" src="images/invalid.png" alt="" />
           <span class="invalid-txt">invalid phone</span>
-
+          <div class="close3"></div>
           <hr class="invalid-line" />
           <span class="enter">please enter valid phone number</span>
         </div>
 
         <div class="field">
-          <input id="date" type="date" placeholder="Date of birth" />
+          <input
+            name="date"
+            id="date"
+            type="date"
+            placeholder="Date of birth"
+            required
+            class="form_data"
+          />
 
           <img class="check4" src="images/check.png" alt="check" />
         </div>
-        <div class="error-box"></div>
+        <div class="error4-box">
+          <img class="invalid" src="images/invalid.png" alt="" />
+          <span class="invalid-txt">invalid date of birth</span>
+          <div class="close4"></div>
+          <hr class="invalid-line" />
+          <span class="enter">please enter Date of birth</span>
+        </div>
         <div class="buttons">
           <button type="button" class="back-btn">back</button>
-          <button type="submit" class="next-btn">
+          <button id="submit" type="submit" class="next-btn">
             next
             <img class="next-btn-arrow" src="images/arrow.png" alt="arrow1" />
           </button>
