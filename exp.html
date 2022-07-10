@@ -51,22 +51,23 @@
 
     <div class="dropdown">
       <input
+        id="exp"
         type="text"
         class="textBox"
         placeholder="Level of knowledge"
         readonly
       />
       <div class="option">
-        <div onclick="show('Beginner')">Beginner</div>
-        <div onclick="show('Intermediate')">Intermediate</div>
-        <div onclick="show('Professional')">Professional</div>
+        <div onclick="show('beginner')">beginner</div>
+        <div onclick="show('normal')">normal</div>
+        <div onclick="show('professional')">professional</div>
       </div>
     </div>
 
     <div class="dropdown2">
       <input
         name="Char"
-        id="Char"
+        id="char"
         type="text"
         class="textBox2"
         placeholder="Choose your Character"
@@ -84,19 +85,19 @@
       <span>Have you participated in the Redberry championship? </span>
       <div class="option">
         <div class="option-yes">
-          <input type="radio" id="yes" />
-        <label for="yes">Yes</label>
+          <input id="yes" onclick="see()" type="radio" name="yes_no" >Yes</input>
         </div>
         <div class="option-no">
-         <input type="radio" id="no" />
-        <label for="no">No</label>
+         
+         <input id="no" onclick="see()"type="radio" name="yes_no">No</input>
       </div>
         </div>
       </div>
     </div>
 
     <div class="buttons-third">
-      <button type="button" class="back-btn-third">back</button>
+      <button type="button" class="back-btn-third"
+      onclick="history.back()">back</button>
       <button type="submit" class="Done-btn">
         Done
       </button>

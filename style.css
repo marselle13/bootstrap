@@ -396,7 +396,7 @@ h3 {
   width: 128px;
   height: 53px;
   left: 650px;
-  bottom: 45px;
+  top: 10px;
 
   background: #212529;
   border-radius: 8px;
@@ -446,7 +446,7 @@ h3 {
   width: 93px;
   height: 53px;
   left: 0px;
-  top: 5px;
+  top: 60px;
 
   border: 1px solid #212529;
   border-radius: 8px;
@@ -559,7 +559,7 @@ h3 {
 input[type="date"]::-webkit-calendar-picker-indicator {
   position: relative;
   right: 590px;
-  cursor: a;
+  cursor: pointer;
 }
 /* check icons */
 .check1,
@@ -888,6 +888,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .dropdown .option div:hover {
   background: #f7f7f9;
+  font-style: bold;
 }
 
 .dropdown .option div {
@@ -996,12 +997,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #212529;
 }
 
-.qustion .option {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
+.option-yes {
+  position: relative;
+  width: 54px;
+  height: 24px;
+  left: 0px;
+  top: 30px;
+}
+
+.option-no {
+  position: relative;
+  width: 54px;
+  height: 24px;
+  left: 100px;
+  top: 5px;
 }
 
 /* FOURTH PAGE */
@@ -1015,7 +1024,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .completed {
-  background: url(images/onboarding.png);
+  background: url(images/Onboarding.png);
   position: absolute;
   width: 402px;
   height: 260.65px;
